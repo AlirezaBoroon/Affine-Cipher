@@ -1,4 +1,4 @@
-def coprime_inspector_fun (a):
+def coprime_inspector_fun (a): #the main reason and motivation for making this function is to have a bigger list of symbols on the keyboard.
     a_divisors= []
     for i in range (2, a+1):
         if a%i== 0:
@@ -72,7 +72,7 @@ def main1_enc ():
     print("So Please enter your string first, for encryption process:")
     string= input()
     strL= list(string)
-    print("Now please enter the number : a (The number 'a' should be coprime with number 101")
+    print("Now please enter the number : a (The number 'a' should be coprime with number 101") # coprime with number 101 means that the number a shouldn't be only 101, 'cause number 101 is a prime number.
     while True:
         a= int(input())
         if coprime_inspector_fun(a)== 0:
